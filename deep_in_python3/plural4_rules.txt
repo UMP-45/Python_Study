@@ -1,0 +1,4 @@
+﻿[sxz]$                             $      es
+[^aeioudgkprt]h$          $      es
+[^aeiou]y$                   y$      ies
+$                                    $      s 

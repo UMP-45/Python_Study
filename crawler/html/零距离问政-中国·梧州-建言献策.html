@@ -1,0 +1,1359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>零距离问政-中国·梧州</title>
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script src="/js/jquery-min.js" type="text/javascript"></script>
+<script src="/js/slides.min.jquery.js" type="text/javascript"></script>
+<script src="/js/tab.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+
+
+
+
+</head>
+<body>
+
+
+
+<!--工具栏-->
+<div class="topNav">
+	<div class="mbody clearfix">
+    	<div class="areaL">
+            <div class="topLink">
+                 <a href="http://www.wzljl.cn" target="_blank">梧州零距离</a>
+                 <a href="http://wz.wzljl.cn" >问政</a>
+                 <a href="http://www.wzljl.cn/node_5280.htm" target="_blank">专题</a>
+                 <a href="http://bbs.wzljl.cn/forum.php" target="_blank">论坛</a>
+                 <a href="http://www.wzljl.cn/node_3680.htm" target="_blank">活动</a>
+                 <a href="http://auto.wzljl.cn/" target="_blank">汽车</a>
+                 <a href="http://www.wzljl.cn/node_2520.htm" target="_blank">楼市</a>
+                 <a href="http://www.wzljl.cn/node_2520.htm" target="_blank">家装</a>
+                 <a href="http://www.wzljl.cn/node_110.htm" target="_blank">理财</a>
+                 <a href="http://www.wzljl.cn/node_107.htm" target="_blank">饮食</a> 
+                 <a href="http://www.wzljl.cn/node_320.htm" target="_blank">旅游</a> 
+                 <a href="http://100.wzljl.cn/" target="_blank">团购</a> 
+                 <a href="http://www.wzljl.cn/node_621.htm" target="_blank">ENGLISH</a> 
+            </div>
+        </div>
+        <div class="areaR">
+                         	<!--登录前 start-->
+            <div class="login" >
+        		<a href="/?mdl=search">高级搜索</a>|<a href="/?mdl=usr&do=login">登录</a>|<a href="/?mdl=usr&do=reg">注册</a>
+            </div>
+            <!--登录前 end-->
+        
+                    </div>
+    </div>
+</div>
+<!--工具栏-->
+<!--头部 start-->
+<div class="header">
+	<div class="mbody">
+      <div class="banner">
+   <!--
+               <object class="ad01" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="960" height="80">
+                <param name="movie" value="images/960x80.swf">
+                 <param name="wmode" value="opaque" />
+                <param name="quality" value="high">
+                <embed src="/images/960x80.swf" quality="high"  wmode="opaque"  pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="80"></embed>
+              </object>-->
+              
+              <style type="text/css">
+			  .banner .cusAd1{ top:-5px;}
+			  </style>
+              
+			  <div style="width:960px;height:80px;overflow:hidden;position:absolute;">
+              <img class='cusAd1' src='data/ggsc/2019/wzljl_5d8dbdce7009f.jpg' width='960' height='80'>
+			  </div>
+             <img src="/images/banner.jpg"  />
+        </div>
+        <ul class="menu clearfix">
+        	<li><a href="/" >首 页</a></li>
+            <li><a href="/?mdl=news&type=wzdjs"  >问政热点</a></li>
+            <li><a href="/?mdl=topic"  class="current" >网友问政</a></li>
+            <li><a href="/?mdl=topic&do=best"  >问政精华</a></li>
+            <li><a href="/?mdl=sj"  >书记信箱</a></li>
+            <li><a href="/?mdl=sz" >市长信箱</a></li>
+            <li><a href="/?mdl=bmtopic"  >政务公开</a></li>
+			<li><a href="/?mdl=wttopic"  >权威发布</a></li>
+            <li><a href="/?mdl=topic&do=add"   >我要提问</a></li>
+
+        </ul>
+        <dl class="ann clearfix">
+        	<dt>公告：</dt>
+            <script language="javascript" src="/?do=notice" ></script>
+    
+
+        </dl>
+    </div>
+</div>
+<!--头部 end-->
+<div class="blank15"></div><script type="text/javascript" src="/js/popup.js"></script>
+
+<script language="javascript">
+
+function cfhref(type,order)
+{
+   var tgetid=1;
+   var typev=$("#type").val();
+    $.each($('a[name^="status"]'),function(i,items){
+	        var this_class=$(items).attr('class');
+	        if(this_class=='current')
+			{
+			   tgetid=items.name.replace("status", '');
+			}
+	  }) 
+   var orgid=$("#hidden_org").val();
+   if(order=='')
+   {
+   
+
+	 		
+	 var linkstring='/?mdl=topic&status='+tgetid;
+		if(typev!=0)
+	    {
+         linkstring=linkstring+'&type='+typev;
+       }
+	   if(orgid!=0)
+	   {
+         linkstring=linkstring+'&orgid='+orgid;
+       }
+	   window.location.href=linkstring;
+	 
+	 
+	 
+	 
+	 
+	 return false;
+   }
+   
+   if(type=='')
+   {
+   
+
+	   var linkstring='/?mdl=topic&orderis='+order+'&status='+tgetid;
+	   if(typev!=0)
+	   {
+         linkstring=linkstring+'&type='+typev;
+       }
+	   if(orgid!=0)
+	   {
+         linkstring=linkstring+'&orgid='+orgid;
+       }
+	   window.location.href=linkstring;	 
+	 
+	 
+     return false;
+   }
+}
+
+$(function(){
+
+
+	
+	 $('a[name^="status"]').click(function(){
+	
+	    var getid=this.name.replace("status", '');
+		var typev=$("#type").val();
+		var orgid=$("#hidden_org").val();
+		
+		var linkstring='/?mdl=topic&status='+getid;
+		if(typev!=0)
+	    {
+         linkstring=linkstring+'&type='+typev;
+       }
+		if(orgid!=0)
+	    {
+         linkstring=linkstring+'&orgid='+orgid;
+       }
+	   window.location.href=linkstring;
+	})
+})
+
+
+</script>
+
+
+<div class="mbody clearfix subMain bgNone">
+	<div class="wywz">
+        	<!---->
+        <div class="sel clearfix">
+        	<div class="colL clearfix">
+            	<div class="tit">网友问政</div>
+                <div class="btn"><a href="javascript:void(0)" onclick="popupTips('popbox');"><img src="/images/sel_btn_02.jpg"  title="筛选部门"/></a><input type="hidden" name="hidden_org" id="hidden_org" value="14"></div>
+            </div>
+            <div class="colR">
+            	<a href="/">网站首页</a>><a href="/?mdl=topic">全部问政</a>><a href="/?mdl=topic&orgid=14">市长信箱</a>            </div>
+        </div>
+        <!---->
+        <div class="title clearfix">
+        	<dl class="clearfix">
+                <dd><a name="status0" href="#" class="current">全部</a></dd>
+                <dd><a name="status1" href="#" >未回复</a></dd>
+                <dd><a name="status3" href="#"  >已受理</a></dd>
+                <dd><a name="status2" href="#"  >已回复</a></dd>
+            </dl>
+           
+        	<div class="nav clearfix">
+            	<div class="left">排序方式：<a href="#" onClick="cfhref('','default')"  class="current">不限</a>
+                                          <a href="#" onClick="cfhref('','date')" >发帖日期</a>
+                                          <a href="#" onClick="cfhref('','reply')" >最新回复</a>
+                                          <a href="#" onClick="cfhref('','comment')" >最新评论</a>
+                                          <a href="#" onClick="cfhref('','hit')" >评论量</a></div>
+                <div class="right">分类：
+                    <select name="type"  id="type" onChange="cfhref(this.value,'')">
+                      <option value='0'>全部</option><option value='1'>建议</option><option value='2'>诉求</option><option value='3'>举报</option><option value='4'>咨询</option><option value='5'>其它</option>
+                    </select>
+                </div>
+            </div>
+    	</div>
+    	<div class="box">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="data" id="data04">
+                  <tr>
+                  	<th width="10%">编号</th>
+                    <th width="39%">标题</th>
+                    <th width="17%">受理单位</th>
+                  
+                    <th width="8%">作者</th>
+                    <th width="8%">状态</th>
+                    <th width="8%">评论/点击</th>
+                     <th width="10%">最新评论</th>
+              		</tr>
+                                        
+                  <tr>
+                  	<td>[85560]</td>
+                    <td class="tit"><span>[举报]</span><a href="/?mdl=topic&do=view&id=85560" target="_blank">持续几个月的扰民，再不处理以暴制暴</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">踢的一手好球<br />2020-02-13</td>
+                    <td >已受理</td>
+                    <td class="num">0/593</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[84544]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=84544" target="_blank">藤县至梧州即梧藤公路，盘龙隧道，治标不治本</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">ahkieu<br />2020-01-10</td>
+                    <td >已回复</td>
+                    <td class="num">0/1889</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[84459]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=84459" target="_blank">梧州至藤县公交车</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">原住民<br />2020-01-08</td>
+                    <td >已回复</td>
+                    <td class="num">2/1496</td>
+                    <td class="date">一分两味<br />2020-01-24</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[83677]</td>
+                    <td class="tit"><span>[诉求]</span><a href="/?mdl=topic&do=view&id=83677" target="_blank">任免</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">lhrlgc<br />2019-12-22</td>
+                    <td >已回复</td>
+                    <td class="num">0/2988</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[83676]</td>
+                    <td class="tit"><span>[诉求]</span><a href="/?mdl=topic&do=view&id=83676" target="_blank">聘任制</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">lhrlgc<br />2019-12-22</td>
+                    <td >已回复</td>
+                    <td class="num">0/2800</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[83673]</td>
+                    <td class="tit"><span>[诉求]</span><a href="/?mdl=topic&do=view&id=83673" target="_blank">新设与学习</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">lhrlgc<br />2019-12-22</td>
+                    <td >未回复</td>
+                    <td class="num">0/489</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[82510]</td>
+                    <td class="tit"><span>[诉求]</span><a href="/?mdl=topic&do=view&id=82510" target="_blank">岑溪市马路镇至波塘镇乡道很烂存在安全隐患</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">廖深光<br />2019-11-20</td>
+                    <td >已受理</td>
+                    <td class="num">0/1066</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[82062]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=82062" target="_blank">关于建立过街天桥的建议</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">m1718<br />2019-11-09</td>
+                    <td >已回复</td>
+                    <td class="num">1/1640</td>
+                    <td class="date">梧州一粟<br />2020-02-20</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[81456]</td>
+                    <td class="tit"><span>[诉求]</span><a href="/?mdl=topic&do=view&id=81456" target="_blank">人才引进</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">lhrlgc<br />2019-10-25</td>
+                    <td >已回复</td>
+                    <td class="num">0/1770</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[79702]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=79702" target="_blank">有关新兴三路改造问题</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">广西侬队<br />2019-09-25</td>
+                    <td >已回复</td>
+                    <td class="num">0/1222</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[79455]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=79455" target="_blank">关于设立长者饭堂</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">nus7557<br />2019-09-20</td>
+                    <td >已回复</td>
+                    <td class="num">0/2019</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[79341]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=79341" target="_blank">优化城市容貌名片</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">知乎初见<br />2019-09-18</td>
+                    <td >已回复</td>
+                    <td class="num">0/3183</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[79094]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=79094" target="_blank">第三代牙膏技术是拯救田七牙膏的最好方法</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">wqf448<br />2019-09-11</td>
+                    <td >已回复</td>
+                    <td class="num">1/2459</td>
+                    <td class="date">完美印刷飞云<br />2019-09-13</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[79065]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=79065" target="_blank">希望能改善市内中小学图书馆的问题</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">nus7557<br />2019-09-11</td>
+                    <td >已回复</td>
+                    <td class="num">0/1400</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[78892]</td>
+                    <td class="tit"><span>[举报]</span><a href="/?mdl=topic&do=view&id=78892" target="_blank">岑溪市第五中学强迫学生星期六在校补课</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">爱情保卫战<br />2019-09-08</td>
+                    <td >已受理</td>
+                    <td class="num">0/1050</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[78161]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=78161" target="_blank">赤水港进港大道路面</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">zfh260704560<br />2019-08-26</td>
+                    <td >已受理</td>
+                    <td class="num">0/1540</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[77970]</td>
+                    <td class="tit"><span>[诉求]</span><a href="/?mdl=topic&do=view&id=77970" target="_blank">梧州足球场何处找</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">三云散人<br />2019-08-21</td>
+                    <td >已回复</td>
+                    <td class="num">0/1622</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[77960]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=77960" target="_blank">关于城市建设的建议</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">老啄木鸟<br />2019-08-21</td>
+                    <td >已回复</td>
+                    <td class="num">0/964</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[76105]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=76105" target="_blank">三龙大道（西江三桥至长洲水利枢纽段）路面坑洼没有路灯</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">健康生活<br />2019-07-11</td>
+                    <td >已回复</td>
+                    <td class="num">0/1992</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[75904]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=75904" target="_blank">希望政府能组织一下净滩活动</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">nus7557<br />2019-07-07</td>
+                    <td >已回复</td>
+                    <td class="num">0/1971</td>
+                    <td class="date"></td>
+                  </tr>
+                                 	</table>
+                <div class="blank15"></div>
+                <div class="dash"></div>
+               <div class="pages">&nbsp;&nbsp;<a class='current'>1</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=2'>2</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=3'>3</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=4'>4</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=5'>5</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=6'>6</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=7'>7</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=8'>8</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=9'>9</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=10'>10</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=2'>下一页</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=11'>>></a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=50'>末页</a></div>
+			</div>
+	</div>
+</div>
+<!-- 弹出窗口开始 -->
+<div class="hidden" id="popbox" style="top:30%">
+	<div class="popbox">
+        <div class="poptitle"><h2><span><a onclick="closeDiv('popbox');" href="#">关闭</a></span>筛选问政部门</h2> </div>
+        	<div class="boxinfo">
+        	<!--内容-->
+         		<div class="popup">
+                <div class="left"></div>
+                     
+                                          					<div class="left">市领导：</div>
+                   
+					<div class="right">
+						<ul>
+                                                  	<li><input id="id2" title="书记信箱" onclick="countSel_url('id2')" type="checkbox"  value="2" name="tbidlist"><label for="id2" style="cursor:pointer">书记信箱</label></li>
+                                                   	<li><input id="id14" title="市长信箱" onclick="countSel_url('id14')" type="checkbox"  checked="checked" value="14" name="tbidlist"><label for="id14" style="cursor:pointer">市长信箱</label></li>
+                                                  </ul>
+					</div>
+                    <div class="blank10"></div>
+                    					<div class="left">市级单位：</div>
+                   
+					<div class="right">
+						<ul>
+                                                  	<li><input id="id54" title="纪委" onclick="countSel_url('id54')" type="checkbox"  value="54" name="tbidlist"><label for="id54" style="cursor:pointer">纪委</label></li>
+                                                   	<li><input id="id73" title="市人大办" onclick="countSel_url('id73')" type="checkbox"  value="73" name="tbidlist"><label for="id73" style="cursor:pointer">市人大办</label></li>
+                                                   	<li><input id="id74" title="市政协办" onclick="countSel_url('id74')" type="checkbox"  value="74" name="tbidlist"><label for="id74" style="cursor:pointer">市政协办</label></li>
+                                                   	<li><input id="id57" title="组织部" onclick="countSel_url('id57')" type="checkbox"  value="57" name="tbidlist"><label for="id57" style="cursor:pointer">组织部</label></li>
+                                                   	<li><input id="id58" title="宣传部" onclick="countSel_url('id58')" type="checkbox"  value="58" name="tbidlist"><label for="id58" style="cursor:pointer">宣传部</label></li>
+                                                   	<li><input id="id59" title="统战部" onclick="countSel_url('id59')" type="checkbox"  value="59" name="tbidlist"><label for="id59" style="cursor:pointer">统战部</label></li>
+                                                   	<li><input id="id60" title="政法委" onclick="countSel_url('id60')" type="checkbox"  value="60" name="tbidlist"><label for="id60" style="cursor:pointer">政法委</label></li>
+                                                   	<li><input id="id124" title="政策研究室" onclick="countSel_url('id124')" type="checkbox"  value="124" name="tbidlist"><label for="id124" style="cursor:pointer">政策研究室</label></li>
+                                                   	<li><input id="id61" title="编办" onclick="countSel_url('id61')" type="checkbox"  value="61" name="tbidlist"><label for="id61" style="cursor:pointer">编办</label></li>
+                                                   	<li><input id="id17" title="信访局" onclick="countSel_url('id17')" type="checkbox"  value="17" name="tbidlist"><label for="id17" style="cursor:pointer">信访局</label></li>
+                                                   	<li><input id="id78" title="督查和绩效考评办" onclick="countSel_url('id78')" type="checkbox"  value="78" name="tbidlist"><label for="id78" style="cursor:pointer">督查和绩效考评办</label></li>
+                                                   	<li><input id="id62" title="老干局" onclick="countSel_url('id62')" type="checkbox"  value="62" name="tbidlist"><label for="id62" style="cursor:pointer">老干局</label></li>
+                                                   	<li><input id="id75" title="市委党校" onclick="countSel_url('id75')" type="checkbox"  value="75" name="tbidlist"><label for="id75" style="cursor:pointer">市委党校</label></li>
+                                                   	<li><input id="id117" title="梧州日报社" onclick="countSel_url('id117')" type="checkbox"  value="117" name="tbidlist"><label for="id117" style="cursor:pointer">梧州日报社</label></li>
+                                                   	<li><input id="id33" title="机关后勤服务中心" onclick="countSel_url('id33')" type="checkbox"  value="33" name="tbidlist"><label for="id33" style="cursor:pointer">机关后勤服务中心</label></li>
+                                                   	<li><input id="id55" title="中级人民法院" onclick="countSel_url('id55')" type="checkbox"  value="55" name="tbidlist"><label for="id55" style="cursor:pointer">中级人民法院</label></li>
+                                                   	<li><input id="id56" title="人民检察院" onclick="countSel_url('id56')" type="checkbox"  value="56" name="tbidlist"><label for="id56" style="cursor:pointer">人民检察院</label></li>
+                                                   	<li><input id="id12" title="发改委" onclick="countSel_url('id12')" type="checkbox"  value="12" name="tbidlist"><label for="id12" style="cursor:pointer">发改委</label></li>
+                                                   	<li><input id="id30" title="教育局" onclick="countSel_url('id30')" type="checkbox"  value="30" name="tbidlist"><label for="id30" style="cursor:pointer">教育局</label></li>
+                                                   	<li><input id="id76" title="科技局" onclick="countSel_url('id76')" type="checkbox"  value="76" name="tbidlist"><label for="id76" style="cursor:pointer">科技局</label></li>
+                                                   	<li><input id="id16" title="工信局" onclick="countSel_url('id16')" type="checkbox"  value="16" name="tbidlist"><label for="id16" style="cursor:pointer">工信局</label></li>
+                                                   	<li><input id="id89" title="民宗委" onclick="countSel_url('id89')" type="checkbox"  value="89" name="tbidlist"><label for="id89" style="cursor:pointer">民宗委</label></li>
+                                                   	<li><input id="id32" title="公安局" onclick="countSel_url('id32')" type="checkbox"  value="32" name="tbidlist"><label for="id32" style="cursor:pointer">公安局</label></li>
+                                                   	<li><input id="id19" title="民政局" onclick="countSel_url('id19')" type="checkbox"  value="19" name="tbidlist"><label for="id19" style="cursor:pointer">民政局</label></li>
+                                                   	<li><input id="id77" title="司法局" onclick="countSel_url('id77')" type="checkbox"  value="77" name="tbidlist"><label for="id77" style="cursor:pointer">司法局</label></li>
+                                                   	<li><input id="id79" title="财政局" onclick="countSel_url('id79')" type="checkbox"  value="79" name="tbidlist"><label for="id79" style="cursor:pointer">财政局</label></li>
+                                                   	<li><input id="id34" title="人力资源和社会保障局" onclick="countSel_url('id34')" type="checkbox"  value="34" name="tbidlist"><label for="id34" style="cursor:pointer">人力资源和社会保障局</label></li>
+                                                   	<li><input id="id18" title="自然资源局" onclick="countSel_url('id18')" type="checkbox"  value="18" name="tbidlist"><label for="id18" style="cursor:pointer">自然资源局</label></li>
+                                                   	<li><input id="id29" title="生态环境局" onclick="countSel_url('id29')" type="checkbox"  value="29" name="tbidlist"><label for="id29" style="cursor:pointer">生态环境局</label></li>
+                                                   	<li><input id="id13" title="住建局" onclick="countSel_url('id13')" type="checkbox"  value="13" name="tbidlist"><label for="id13" style="cursor:pointer">住建局</label></li>
+                                                   	<li><input id="id26" title="交通运输局" onclick="countSel_url('id26')" type="checkbox"  value="26" name="tbidlist"><label for="id26" style="cursor:pointer">交通运输局</label></li>
+                                                   	<li><input id="id24" title="水利局" onclick="countSel_url('id24')" type="checkbox"  value="24" name="tbidlist"><label for="id24" style="cursor:pointer">水利局</label></li>
+                                                   	<li><input id="id23" title="农业农村局" onclick="countSel_url('id23')" type="checkbox"  value="23" name="tbidlist"><label for="id23" style="cursor:pointer">农业农村局</label></li>
+                                                   	<li><input id="id36" title="商务局" onclick="countSel_url('id36')" type="checkbox"  value="36" name="tbidlist"><label for="id36" style="cursor:pointer">商务局</label></li>
+                                                   	<li><input id="id38" title="文化广电体育和旅游局" onclick="countSel_url('id38')" type="checkbox"  value="38" name="tbidlist"><label for="id38" style="cursor:pointer">文化广电体育和旅游局</label></li>
+                                                   	<li><input id="id31" title="卫生健康委" onclick="countSel_url('id31')" type="checkbox"  value="31" name="tbidlist"><label for="id31" style="cursor:pointer">卫生健康委</label></li>
+                                                   	<li><input id="id127" title="退役军人事务局" onclick="countSel_url('id127')" type="checkbox"  value="127" name="tbidlist"><label for="id127" style="cursor:pointer">退役军人事务局</label></li>
+                                                   	<li><input id="id21" title="应急管理局" onclick="countSel_url('id21')" type="checkbox"  value="21" name="tbidlist"><label for="id21" style="cursor:pointer">应急管理局</label></li>
+                                                   	<li><input id="id80" title="审计局" onclick="countSel_url('id80')" type="checkbox"  value="80" name="tbidlist"><label for="id80" style="cursor:pointer">审计局</label></li>
+                                                   	<li><input id="id28" title="市场监督管理局" onclick="countSel_url('id28')" type="checkbox"  value="28" name="tbidlist"><label for="id28" style="cursor:pointer">市场监督管理局</label></li>
+                                                   	<li><input id="id81" title="统计局" onclick="countSel_url('id81')" type="checkbox"  value="81" name="tbidlist"><label for="id81" style="cursor:pointer">统计局</label></li>
+                                                   	<li><input id="id25" title="林业局" onclick="countSel_url('id25')" type="checkbox"  value="25" name="tbidlist"><label for="id25" style="cursor:pointer">林业局</label></li>
+                                                   	<li><input id="id94" title="扶贫办" onclick="countSel_url('id94')" type="checkbox"  value="94" name="tbidlist"><label for="id94" style="cursor:pointer">扶贫办</label></li>
+                                                   	<li><input id="id128" title="医疗保障局" onclick="countSel_url('id128')" type="checkbox"  value="128" name="tbidlist"><label for="id128" style="cursor:pointer">医疗保障局</label></li>
+                                                   	<li><input id="id22" title="城市管理监督局" onclick="countSel_url('id22')" type="checkbox"  value="22" name="tbidlist"><label for="id22" style="cursor:pointer">城市管理监督局</label></li>
+                                                   	<li><input id="id122" title="行政审批局" onclick="countSel_url('id122')" type="checkbox"  value="122" name="tbidlist"><label for="id122" style="cursor:pointer">行政审批局</label></li>
+                                                   	<li><input id="id129" title="金融办" onclick="countSel_url('id129')" type="checkbox"  value="129" name="tbidlist"><label for="id129" style="cursor:pointer">金融办</label></li>
+                                                   	<li><input id="id84" title="国资委" onclick="countSel_url('id84')" type="checkbox"  value="84" name="tbidlist"><label for="id84" style="cursor:pointer">国资委</label></li>
+                                                   	<li><input id="id86" title="投资促进局" onclick="countSel_url('id86')" type="checkbox"  value="86" name="tbidlist"><label for="id86" style="cursor:pointer">投资促进局</label></li>
+                                                   	<li><input id="id130" title="梧州广播电视台" onclick="countSel_url('id130')" type="checkbox"  value="130" name="tbidlist"><label for="id130" style="cursor:pointer">梧州广播电视台</label></li>
+                                                   	<li><input id="id95" title="公积金管理中心" onclick="countSel_url('id95')" type="checkbox"  value="95" name="tbidlist"><label for="id95" style="cursor:pointer">公积金管理中心</label></li>
+                                                   	<li><input id="id114" title="食品药品检验所" onclick="countSel_url('id114')" type="checkbox"  value="114" name="tbidlist"><label for="id114" style="cursor:pointer">食品药品检验所</label></li>
+                                                   	<li><input id="id101" title="粤桂合作特别试验区" onclick="countSel_url('id101')" type="checkbox"  value="101" name="tbidlist"><label for="id101" style="cursor:pointer">粤桂合作特别试验区</label></li>
+                                                   	<li><input id="id96" title="梧州高新区" onclick="countSel_url('id96')" type="checkbox"  value="96" name="tbidlist"><label for="id96" style="cursor:pointer">梧州高新区</label></li>
+                                                   	<li><input id="id97" title="循环经济产业园区" onclick="countSel_url('id97')" type="checkbox"  value="97" name="tbidlist"><label for="id97" style="cursor:pointer">循环经济产业园区</label></li>
+                                                   	<li><input id="id107" title="苍海新区管委会" onclick="countSel_url('id107')" type="checkbox"  value="107" name="tbidlist"><label for="id107" style="cursor:pointer">苍海新区管委会</label></li>
+                                                   	<li><input id="id98" title="不锈钢产业园区" onclick="countSel_url('id98')" type="checkbox"  value="98" name="tbidlist"><label for="id98" style="cursor:pointer">不锈钢产业园区</label></li>
+                                                   	<li><input id="id15" title="商贸物流园区" onclick="countSel_url('id15')" type="checkbox"  value="15" name="tbidlist"><label for="id15" style="cursor:pointer">商贸物流园区</label></li>
+                                                   	<li><input id="id113" title="消防救援支队" onclick="countSel_url('id113')" type="checkbox"  value="113" name="tbidlist"><label for="id113" style="cursor:pointer">消防救援支队</label></li>
+                                                   	<li><input id="id64" title="总工会" onclick="countSel_url('id64')" type="checkbox"  value="64" name="tbidlist"><label for="id64" style="cursor:pointer">总工会</label></li>
+                                                   	<li><input id="id65" title="团市委" onclick="countSel_url('id65')" type="checkbox"  value="65" name="tbidlist"><label for="id65" style="cursor:pointer">团市委</label></li>
+                                                   	<li><input id="id66" title="妇联" onclick="countSel_url('id66')" type="checkbox"  value="66" name="tbidlist"><label for="id66" style="cursor:pointer">妇联</label></li>
+                                                   	<li><input id="id67" title="科协" onclick="countSel_url('id67')" type="checkbox"  value="67" name="tbidlist"><label for="id67" style="cursor:pointer">科协</label></li>
+                                                   	<li><input id="id68" title="文联" onclick="countSel_url('id68')" type="checkbox"  value="68" name="tbidlist"><label for="id68" style="cursor:pointer">文联</label></li>
+                                                   	<li><input id="id69" title="侨联" onclick="countSel_url('id69')" type="checkbox"  value="69" name="tbidlist"><label for="id69" style="cursor:pointer">侨联</label></li>
+                                                   	<li><input id="id70" title="残联" onclick="countSel_url('id70')" type="checkbox"  value="70" name="tbidlist"><label for="id70" style="cursor:pointer">残联</label></li>
+                                                   	<li><input id="id71" title="工商联" onclick="countSel_url('id71')" type="checkbox"  value="71" name="tbidlist"><label for="id71" style="cursor:pointer">工商联</label></li>
+                                                   	<li><input id="id126" title="社科联" onclick="countSel_url('id126')" type="checkbox"  value="126" name="tbidlist"><label for="id126" style="cursor:pointer">社科联</label></li>
+                                                   	<li><input id="id72" title="红十字会" onclick="countSel_url('id72')" type="checkbox"  value="72" name="tbidlist"><label for="id72" style="cursor:pointer">红十字会</label></li>
+                                                   	<li><input id="id115" title="梧州学院" onclick="countSel_url('id115')" type="checkbox"  value="115" name="tbidlist"><label for="id115" style="cursor:pointer">梧州学院</label></li>
+                                                   	<li><input id="id116" title="梧州职业学院" onclick="countSel_url('id116')" type="checkbox"  value="116" name="tbidlist"><label for="id116" style="cursor:pointer">梧州职业学院</label></li>
+                                                   	<li><input id="id99" title="梧州海关" onclick="countSel_url('id99')" type="checkbox"  value="99" name="tbidlist"><label for="id99" style="cursor:pointer">梧州海关</label></li>
+                                                   	<li><input id="id42" title="税务局" onclick="countSel_url('id42')" type="checkbox"  value="42" name="tbidlist"><label for="id42" style="cursor:pointer">税务局</label></li>
+                                                   	<li><input id="id35" title="海事局" onclick="countSel_url('id35')" type="checkbox"  value="35" name="tbidlist"><label for="id35" style="cursor:pointer">海事局</label></li>
+                                                   	<li><input id="id102" title="气象局" onclick="countSel_url('id102')" type="checkbox"  value="102" name="tbidlist"><label for="id102" style="cursor:pointer">气象局</label></li>
+                                                   	<li><input id="id103" title="水文局" onclick="countSel_url('id103')" type="checkbox"  value="103" name="tbidlist"><label for="id103" style="cursor:pointer">水文局</label></li>
+                                                   	<li><input id="id104" title="桂东公路局" onclick="countSel_url('id104')" type="checkbox"  value="104" name="tbidlist"><label for="id104" style="cursor:pointer">桂东公路局</label></li>
+                                                   	<li><input id="id112" title="供电局" onclick="countSel_url('id112')" type="checkbox"  value="112" name="tbidlist"><label for="id112" style="cursor:pointer">供电局</label></li>
+                                                   	<li><input id="id105" title="烟草局" onclick="countSel_url('id105')" type="checkbox"  value="105" name="tbidlist"><label for="id105" style="cursor:pointer">烟草局</label></li>
+                                                   	<li><input id="id108" title="邮政管理局" onclick="countSel_url('id108')" type="checkbox"  value="108" name="tbidlist"><label for="id108" style="cursor:pointer">邮政管理局</label></li>
+                                                   	<li><input id="id109" title="航道管理局" onclick="countSel_url('id109')" type="checkbox"  value="109" name="tbidlist"><label for="id109" style="cursor:pointer">航道管理局</label></li>
+                                                   	<li><input id="id110" title="人民银行梧州支行" onclick="countSel_url('id110')" type="checkbox"  value="110" name="tbidlist"><label for="id110" style="cursor:pointer">人民银行梧州支行</label></li>
+                                                   	<li><input id="id111" title="银保监分局" onclick="countSel_url('id111')" type="checkbox"  value="111" name="tbidlist"><label for="id111" style="cursor:pointer">银保监分局</label></li>
+                                                   	<li><input id="id118" title="梧州机场公司" onclick="countSel_url('id118')" type="checkbox"  value="118" name="tbidlist"><label for="id118" style="cursor:pointer">梧州机场公司</label></li>
+                                                   	<li><input id="id44" title="其他部门" onclick="countSel_url('id44')" type="checkbox"  value="44" name="tbidlist"><label for="id44" style="cursor:pointer">其他部门</label></li>
+                                                   	<li><input id="id53" title="问政走基层" onclick="countSel_url('id53')" type="checkbox"  value="53" name="tbidlist"><label for="id53" style="cursor:pointer">问政走基层</label></li>
+                                                   	<li><input id="id119" title="乡村建设曝光台" onclick="countSel_url('id119')" type="checkbox"  value="119" name="tbidlist"><label for="id119" style="cursor:pointer">乡村建设曝光台</label></li>
+                                                   	<li><input id="id120" title=" 问计于民专题" onclick="countSel_url('id120')" type="checkbox"  value="120" name="tbidlist"><label for="id120" style="cursor:pointer"> 问计于民专题</label></li>
+                                                   	<li><input id="id121" title="律师在线" onclick="countSel_url('id121')" type="checkbox"  value="121" name="tbidlist"><label for="id121" style="cursor:pointer">律师在线</label></li>
+                                                  </ul>
+					</div>
+                    <div class="blank10"></div>
+                    					<div class="left">县市区：</div>
+                   
+					<div class="right">
+						<ul>
+                                                  	<li><input id="id5" title="苍梧县" onclick="countSel_url('id5')" type="checkbox"  value="5" name="tbidlist"><label for="id5" style="cursor:pointer">苍梧县</label></li>
+                                                   	<li><input id="id4" title="岑溪市" onclick="countSel_url('id4')" type="checkbox"  value="4" name="tbidlist"><label for="id4" style="cursor:pointer">岑溪市</label></li>
+                                                   	<li><input id="id6" title="藤县" onclick="countSel_url('id6')" type="checkbox"  value="6" name="tbidlist"><label for="id6" style="cursor:pointer">藤县</label></li>
+                                                   	<li><input id="id7" title="蒙山县" onclick="countSel_url('id7')" type="checkbox"  value="7" name="tbidlist"><label for="id7" style="cursor:pointer">蒙山县</label></li>
+                                                   	<li><input id="id9" title="万秀区" onclick="countSel_url('id9')" type="checkbox"  value="9" name="tbidlist"><label for="id9" style="cursor:pointer">万秀区</label></li>
+                                                   	<li><input id="id11" title="长洲区" onclick="countSel_url('id11')" type="checkbox"  value="11" name="tbidlist"><label for="id11" style="cursor:pointer">长洲区</label></li>
+                                                   	<li><input id="id52" title="龙圩区" onclick="countSel_url('id52')" type="checkbox"  value="52" name="tbidlist"><label for="id52" style="cursor:pointer">龙圩区</label></li>
+                                                  </ul>
+					</div>
+                    <div class="blank10"></div>
+                                    </div>
+          		<!--内容 End-->
+		</div>
+	</div>
+</div>
+
+<!-- 弹出窗口结束 -->
+<div class="blank15"></div>
+<div class="footer">
+	主办：中共梧州市委宣传部　　承办：梧州日报社　  管理维护：梧州零距离网站 <br />  
+</div>
+
+
+<div style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe19e879f80c410d0fa7759edcb0ea3f7' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+
+</body>
+</html><!-- filter: fixurl enabled --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>零距离问政-中国·梧州</title>
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script src="/js/jquery-min.js" type="text/javascript"></script>
+<script src="/js/slides.min.jquery.js" type="text/javascript"></script>
+<script src="/js/tab.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+
+
+
+
+</head>
+<body>
+
+
+
+<!--工具栏-->
+<div class="topNav">
+	<div class="mbody clearfix">
+    	<div class="areaL">
+            <div class="topLink">
+                 <a href="http://www.wzljl.cn" target="_blank">梧州零距离</a>
+                 <a href="http://wz.wzljl.cn" >问政</a>
+                 <a href="http://www.wzljl.cn/node_5280.htm" target="_blank">专题</a>
+                 <a href="http://bbs.wzljl.cn/forum.php" target="_blank">论坛</a>
+                 <a href="http://www.wzljl.cn/node_3680.htm" target="_blank">活动</a>
+                 <a href="http://auto.wzljl.cn/" target="_blank">汽车</a>
+                 <a href="http://www.wzljl.cn/node_2520.htm" target="_blank">楼市</a>
+                 <a href="http://www.wzljl.cn/node_2520.htm" target="_blank">家装</a>
+                 <a href="http://www.wzljl.cn/node_110.htm" target="_blank">理财</a>
+                 <a href="http://www.wzljl.cn/node_107.htm" target="_blank">饮食</a> 
+                 <a href="http://www.wzljl.cn/node_320.htm" target="_blank">旅游</a> 
+                 <a href="http://100.wzljl.cn/" target="_blank">团购</a> 
+                 <a href="http://www.wzljl.cn/node_621.htm" target="_blank">ENGLISH</a> 
+            </div>
+        </div>
+        <div class="areaR">
+                         	<!--登录前 start-->
+            <div class="login" >
+        		<a href="/?mdl=search">高级搜索</a>|<a href="/?mdl=usr&do=login">登录</a>|<a href="/?mdl=usr&do=reg">注册</a>
+            </div>
+            <!--登录前 end-->
+        
+                    </div>
+    </div>
+</div>
+<!--工具栏-->
+<!--头部 start-->
+<div class="header">
+	<div class="mbody">
+      <div class="banner">
+   <!--
+               <object class="ad01" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="960" height="80">
+                <param name="movie" value="images/960x80.swf">
+                 <param name="wmode" value="opaque" />
+                <param name="quality" value="high">
+                <embed src="/images/960x80.swf" quality="high"  wmode="opaque"  pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="80"></embed>
+              </object>-->
+              
+              <style type="text/css">
+			  .banner .cusAd1{ top:-5px;}
+			  </style>
+              
+			  <div style="width:960px;height:80px;overflow:hidden;position:absolute;">
+              <img class='cusAd1' src='data/ggsc/2019/wzljl_5d8dbdce7009f.jpg' width='960' height='80'>
+			  </div>
+             <img src="/images/banner.jpg"  />
+        </div>
+        <ul class="menu clearfix">
+        	<li><a href="/" >首 页</a></li>
+            <li><a href="/?mdl=news&type=wzdjs"  >问政热点</a></li>
+            <li><a href="/?mdl=topic"  class="current" >网友问政</a></li>
+            <li><a href="/?mdl=topic&do=best"  >问政精华</a></li>
+            <li><a href="/?mdl=sj"  >书记信箱</a></li>
+            <li><a href="/?mdl=sz" >市长信箱</a></li>
+            <li><a href="/?mdl=bmtopic"  >政务公开</a></li>
+			<li><a href="/?mdl=wttopic"  >权威发布</a></li>
+            <li><a href="/?mdl=topic&do=add"   >我要提问</a></li>
+
+        </ul>
+        <dl class="ann clearfix">
+        	<dt>公告：</dt>
+            <script language="javascript" src="/?do=notice" ></script>
+    
+
+        </dl>
+    </div>
+</div>
+<!--头部 end-->
+<div class="blank15"></div><script type="text/javascript" src="/js/popup.js"></script>
+
+<script language="javascript">
+
+function cfhref(type,order)
+{
+   var tgetid=1;
+   var typev=$("#type").val();
+    $.each($('a[name^="status"]'),function(i,items){
+	        var this_class=$(items).attr('class');
+	        if(this_class=='current')
+			{
+			   tgetid=items.name.replace("status", '');
+			}
+	  }) 
+   var orgid=$("#hidden_org").val();
+   if(order=='')
+   {
+   
+
+	 		
+	 var linkstring='/?mdl=topic&status='+tgetid;
+		if(typev!=0)
+	    {
+         linkstring=linkstring+'&type='+typev;
+       }
+	   if(orgid!=0)
+	   {
+         linkstring=linkstring+'&orgid='+orgid;
+       }
+	   window.location.href=linkstring;
+	 
+	 
+	 
+	 
+	 
+	 return false;
+   }
+   
+   if(type=='')
+   {
+   
+
+	   var linkstring='/?mdl=topic&orderis='+order+'&status='+tgetid;
+	   if(typev!=0)
+	   {
+         linkstring=linkstring+'&type='+typev;
+       }
+	   if(orgid!=0)
+	   {
+         linkstring=linkstring+'&orgid='+orgid;
+       }
+	   window.location.href=linkstring;	 
+	 
+	 
+     return false;
+   }
+}
+
+$(function(){
+
+
+	
+	 $('a[name^="status"]').click(function(){
+	
+	    var getid=this.name.replace("status", '');
+		var typev=$("#type").val();
+		var orgid=$("#hidden_org").val();
+		
+		var linkstring='/?mdl=topic&status='+getid;
+		if(typev!=0)
+	    {
+         linkstring=linkstring+'&type='+typev;
+       }
+		if(orgid!=0)
+	    {
+         linkstring=linkstring+'&orgid='+orgid;
+       }
+	   window.location.href=linkstring;
+	})
+})
+
+
+</script>
+
+
+<div class="mbody clearfix subMain bgNone">
+	<div class="wywz">
+        	<!---->
+        <div class="sel clearfix">
+        	<div class="colL clearfix">
+            	<div class="tit">网友问政</div>
+                <div class="btn"><a href="javascript:void(0)" onclick="popupTips('popbox');"><img src="/images/sel_btn_02.jpg"  title="筛选部门"/></a><input type="hidden" name="hidden_org" id="hidden_org" value="14"></div>
+            </div>
+            <div class="colR">
+            	<a href="/">网站首页</a>><a href="/?mdl=topic">全部问政</a>><a href="/?mdl=topic&orgid=14">市长信箱</a>            </div>
+        </div>
+        <!---->
+        <div class="title clearfix">
+        	<dl class="clearfix">
+                <dd><a name="status0" href="#" class="current">全部</a></dd>
+                <dd><a name="status1" href="#" >未回复</a></dd>
+                <dd><a name="status3" href="#"  >已受理</a></dd>
+                <dd><a name="status2" href="#"  >已回复</a></dd>
+            </dl>
+           
+        	<div class="nav clearfix">
+            	<div class="left">排序方式：<a href="#" onClick="cfhref('','default')"  class="current">不限</a>
+                                          <a href="#" onClick="cfhref('','date')" >发帖日期</a>
+                                          <a href="#" onClick="cfhref('','reply')" >最新回复</a>
+                                          <a href="#" onClick="cfhref('','comment')" >最新评论</a>
+                                          <a href="#" onClick="cfhref('','hit')" >评论量</a></div>
+                <div class="right">分类：
+                    <select name="type"  id="type" onChange="cfhref(this.value,'')">
+                      <option value='0'>全部</option><option value='1'>建议</option><option value='2'>诉求</option><option value='3'>举报</option><option value='4'>咨询</option><option value='5'>其它</option>
+                    </select>
+                </div>
+            </div>
+    	</div>
+    	<div class="box">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="data" id="data04">
+                  <tr>
+                  	<th width="10%">编号</th>
+                    <th width="39%">标题</th>
+                    <th width="17%">受理单位</th>
+                  
+                    <th width="8%">作者</th>
+                    <th width="8%">状态</th>
+                    <th width="8%">评论/点击</th>
+                     <th width="10%">最新评论</th>
+              		</tr>
+                                        
+                  <tr>
+                  	<td>[75515]</td>
+                    <td class="tit"><span>[举报]</span><a href="/?mdl=topic&do=view&id=75515" target="_blank">神冠豪都物业梧州市冠裕物业服务有限公司是否黑恶势力</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">mrdavidxie<br />2019-06-29</td>
+                    <td >已回复</td>
+                    <td class="num">1/2058</td>
+                    <td class="date">summeryang<br />2019-12-18</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[75153]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=75153" target="_blank">希望设立长者饭堂</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">nus7557<br />2019-06-22</td>
+                    <td >已回复</td>
+                    <td class="num">2/666</td>
+                    <td class="date">nus7557<br />2019-09-18</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[74018]</td>
+                    <td class="tit"><span>[咨询]</span><a href="/?mdl=topic&do=view&id=74018" target="_blank">共享单车</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">wzzxr<br />2019-05-31</td>
+                    <td >已回复</td>
+                    <td class="num">1/1860</td>
+                    <td class="date">不得不俗<br />2019-06-02</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[73752]</td>
+                    <td class="tit"><span>[诉求]</span><a href="/?mdl=topic&do=view&id=73752" target="_blank">白云山冰泉豆浆馆道路阻塞</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">lsmiriam<br />2019-05-27</td>
+                    <td >已回复</td>
+                    <td class="num">0/1094</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[73037]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=73037" target="_blank">老旧建筑保护维护与发展</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">梧藤天<br />2019-05-15</td>
+                    <td >已回复</td>
+                    <td class="num">0/1426</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[72740]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=72740" target="_blank">关于城投停车管理问题</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">停车好贵<br />2019-05-09</td>
+                    <td >已回复</td>
+                    <td class="num">0/2110</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[72465]</td>
+                    <td class="tit"><span>[诉求]</span><a href="/?mdl=topic&do=view&id=72465" target="_blank">新设与改变</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">lhrlgc<br />2019-05-04</td>
+                    <td >已回复</td>
+                    <td class="num">0/13351</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[71394]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=71394" target="_blank">【新建公交车站更为倒退落后】</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">TWO2<br />2019-04-14</td>
+                    <td >已回复</td>
+                    <td class="num">0/1537</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[70692]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=70692" target="_blank">强制性要求与信息共享</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">lhrlgc<br />2019-03-26</td>
+                    <td >已回复</td>
+                    <td class="num">0/1552</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[70420]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=70420" target="_blank">新兴二路道路提升工程施工过程中的环保问题</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">脑子是好东西<br />2019-03-21</td>
+                    <td >已回复</td>
+                    <td class="num">1/1372</td>
+                    <td class="date">菠萝加辣椒<br />2019-03-21</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[70371]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=70371" target="_blank">我们真的做到了海纳百川了吗？</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">gxdjf<br />2019-03-20</td>
+                    <td >已回复</td>
+                    <td class="num">1/2144</td>
+                    <td class="date">gxdjf<br />2019-03-27</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[70327]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=70327" target="_blank">市长你说，西堤三路防洪堤改造提意见。</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">问政小公主<br />2019-03-19</td>
+                    <td >已回复</td>
+                    <td class="num">1/1599</td>
+                    <td class="date">问政小公主<br />2019-03-19</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[69814]</td>
+                    <td class="tit"><span>[咨询]</span><a href="/?mdl=topic&do=view&id=69814" target="_blank">三龙片区的道路设计问题</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">三江总汇彩虹雨<br />2019-03-08</td>
+                    <td >已回复</td>
+                    <td class="num">0/2399</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[69723]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=69723" target="_blank">我本分开了14年车唯独到你们这里就高速违章了？</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">yigeyouke<br />2019-03-06</td>
+                    <td >已回复</td>
+                    <td class="num">6/2524</td>
+                    <td class="date">睇不惯<br />2019-04-12</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[68872]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=68872" target="_blank">潘塘公园应该趁这次改造增加荷花品种</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">问政小公主<br />2019-02-15</td>
+                    <td >已回复</td>
+                    <td class="num">1/2398</td>
+                    <td class="date">gaozhaoxing<br />2019-02-15</td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[68558]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=68558" target="_blank">执行</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">lhrlgc<br />2019-02-06</td>
+                    <td >已回复</td>
+                    <td class="num">0/13571</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[68556]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=68556" target="_blank">改革</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">lhrlgc<br />2019-02-06</td>
+                    <td >已回复</td>
+                    <td class="num">0/13582</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[68544]</td>
+                    <td class="tit"><span>[诉求]</span><a href="/?mdl=topic&do=view&id=68544" target="_blank">岑溪市大广场的十字路口的斑马线设计有问题</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">廖KJ15078122182<br />2019-02-06</td>
+                    <td >已回复</td>
+                    <td class="num">0/1200</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[68542]</td>
+                    <td class="tit"><span>[举报]</span><a href="/?mdl=topic&do=view&id=68542" target="_blank">岑溪市商贸城内街的人行道全被广告牌霸占！谁管？</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">廖KJ15078122182<br />2019-02-06</td>
+                    <td >已回复</td>
+                    <td class="num">0/1321</td>
+                    <td class="date"></td>
+                  </tr>
+                                       
+                  <tr>
+                  	<td>[68351]</td>
+                    <td class="tit"><span>[建议]</span><a href="/?mdl=topic&do=view&id=68351" target="_blank">梧州市的在建已建桥应予以适合的名称公布</a>
+                   
+
+                 
+                    </td>
+                    <td><span>市长信箱</span></td>
+                    
+                    <td  class="date">m1718<br />2019-01-30</td>
+                    <td >已回复</td>
+                    <td class="num">0/1477</td>
+                    <td class="date"></td>
+                  </tr>
+                                 	</table>
+                <div class="blank15"></div>
+                <div class="dash"></div>
+               <div class="pages">&nbsp;&nbsp;<a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=1'>上一页</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=1'>1</a> <a class='current'>2</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=3'>3</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=4'>4</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=5'>5</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=6'>6</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=7'>7</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=8'>8</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=9'>9</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=10'>10</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=3'>下一页</a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=11'>>></a> <a class='links' href='/?mdl=topic&type=0&orderis=default&status=0&orgid=14&szTypeId=2&page=50'>末页</a></div>
+			</div>
+	</div>
+</div>
+<!-- 弹出窗口开始 -->
+<div class="hidden" id="popbox" style="top:30%">
+	<div class="popbox">
+        <div class="poptitle"><h2><span><a onclick="closeDiv('popbox');" href="#">关闭</a></span>筛选问政部门</h2> </div>
+        	<div class="boxinfo">
+        	<!--内容-->
+         		<div class="popup">
+                <div class="left"></div>
+                     
+                                          					<div class="left">市领导：</div>
+                   
+					<div class="right">
+						<ul>
+                                                  	<li><input id="id2" title="书记信箱" onclick="countSel_url('id2')" type="checkbox"  value="2" name="tbidlist"><label for="id2" style="cursor:pointer">书记信箱</label></li>
+                                                   	<li><input id="id14" title="市长信箱" onclick="countSel_url('id14')" type="checkbox"  checked="checked" value="14" name="tbidlist"><label for="id14" style="cursor:pointer">市长信箱</label></li>
+                                                  </ul>
+					</div>
+                    <div class="blank10"></div>
+                    					<div class="left">市级单位：</div>
+                   
+					<div class="right">
+						<ul>
+                                                  	<li><input id="id54" title="纪委" onclick="countSel_url('id54')" type="checkbox"  value="54" name="tbidlist"><label for="id54" style="cursor:pointer">纪委</label></li>
+                                                   	<li><input id="id73" title="市人大办" onclick="countSel_url('id73')" type="checkbox"  value="73" name="tbidlist"><label for="id73" style="cursor:pointer">市人大办</label></li>
+                                                   	<li><input id="id74" title="市政协办" onclick="countSel_url('id74')" type="checkbox"  value="74" name="tbidlist"><label for="id74" style="cursor:pointer">市政协办</label></li>
+                                                   	<li><input id="id57" title="组织部" onclick="countSel_url('id57')" type="checkbox"  value="57" name="tbidlist"><label for="id57" style="cursor:pointer">组织部</label></li>
+                                                   	<li><input id="id58" title="宣传部" onclick="countSel_url('id58')" type="checkbox"  value="58" name="tbidlist"><label for="id58" style="cursor:pointer">宣传部</label></li>
+                                                   	<li><input id="id59" title="统战部" onclick="countSel_url('id59')" type="checkbox"  value="59" name="tbidlist"><label for="id59" style="cursor:pointer">统战部</label></li>
+                                                   	<li><input id="id60" title="政法委" onclick="countSel_url('id60')" type="checkbox"  value="60" name="tbidlist"><label for="id60" style="cursor:pointer">政法委</label></li>
+                                                   	<li><input id="id124" title="政策研究室" onclick="countSel_url('id124')" type="checkbox"  value="124" name="tbidlist"><label for="id124" style="cursor:pointer">政策研究室</label></li>
+                                                   	<li><input id="id61" title="编办" onclick="countSel_url('id61')" type="checkbox"  value="61" name="tbidlist"><label for="id61" style="cursor:pointer">编办</label></li>
+                                                   	<li><input id="id17" title="信访局" onclick="countSel_url('id17')" type="checkbox"  value="17" name="tbidlist"><label for="id17" style="cursor:pointer">信访局</label></li>
+                                                   	<li><input id="id78" title="督查和绩效考评办" onclick="countSel_url('id78')" type="checkbox"  value="78" name="tbidlist"><label for="id78" style="cursor:pointer">督查和绩效考评办</label></li>
+                                                   	<li><input id="id62" title="老干局" onclick="countSel_url('id62')" type="checkbox"  value="62" name="tbidlist"><label for="id62" style="cursor:pointer">老干局</label></li>
+                                                   	<li><input id="id75" title="市委党校" onclick="countSel_url('id75')" type="checkbox"  value="75" name="tbidlist"><label for="id75" style="cursor:pointer">市委党校</label></li>
+                                                   	<li><input id="id117" title="梧州日报社" onclick="countSel_url('id117')" type="checkbox"  value="117" name="tbidlist"><label for="id117" style="cursor:pointer">梧州日报社</label></li>
+                                                   	<li><input id="id33" title="机关后勤服务中心" onclick="countSel_url('id33')" type="checkbox"  value="33" name="tbidlist"><label for="id33" style="cursor:pointer">机关后勤服务中心</label></li>
+                                                   	<li><input id="id55" title="中级人民法院" onclick="countSel_url('id55')" type="checkbox"  value="55" name="tbidlist"><label for="id55" style="cursor:pointer">中级人民法院</label></li>
+                                                   	<li><input id="id56" title="人民检察院" onclick="countSel_url('id56')" type="checkbox"  value="56" name="tbidlist"><label for="id56" style="cursor:pointer">人民检察院</label></li>
+                                                   	<li><input id="id12" title="发改委" onclick="countSel_url('id12')" type="checkbox"  value="12" name="tbidlist"><label for="id12" style="cursor:pointer">发改委</label></li>
+                                                   	<li><input id="id30" title="教育局" onclick="countSel_url('id30')" type="checkbox"  value="30" name="tbidlist"><label for="id30" style="cursor:pointer">教育局</label></li>
+                                                   	<li><input id="id76" title="科技局" onclick="countSel_url('id76')" type="checkbox"  value="76" name="tbidlist"><label for="id76" style="cursor:pointer">科技局</label></li>
+                                                   	<li><input id="id16" title="工信局" onclick="countSel_url('id16')" type="checkbox"  value="16" name="tbidlist"><label for="id16" style="cursor:pointer">工信局</label></li>
+                                                   	<li><input id="id89" title="民宗委" onclick="countSel_url('id89')" type="checkbox"  value="89" name="tbidlist"><label for="id89" style="cursor:pointer">民宗委</label></li>
+                                                   	<li><input id="id32" title="公安局" onclick="countSel_url('id32')" type="checkbox"  value="32" name="tbidlist"><label for="id32" style="cursor:pointer">公安局</label></li>
+                                                   	<li><input id="id19" title="民政局" onclick="countSel_url('id19')" type="checkbox"  value="19" name="tbidlist"><label for="id19" style="cursor:pointer">民政局</label></li>
+                                                   	<li><input id="id77" title="司法局" onclick="countSel_url('id77')" type="checkbox"  value="77" name="tbidlist"><label for="id77" style="cursor:pointer">司法局</label></li>
+                                                   	<li><input id="id79" title="财政局" onclick="countSel_url('id79')" type="checkbox"  value="79" name="tbidlist"><label for="id79" style="cursor:pointer">财政局</label></li>
+                                                   	<li><input id="id34" title="人力资源和社会保障局" onclick="countSel_url('id34')" type="checkbox"  value="34" name="tbidlist"><label for="id34" style="cursor:pointer">人力资源和社会保障局</label></li>
+                                                   	<li><input id="id18" title="自然资源局" onclick="countSel_url('id18')" type="checkbox"  value="18" name="tbidlist"><label for="id18" style="cursor:pointer">自然资源局</label></li>
+                                                   	<li><input id="id29" title="生态环境局" onclick="countSel_url('id29')" type="checkbox"  value="29" name="tbidlist"><label for="id29" style="cursor:pointer">生态环境局</label></li>
+                                                   	<li><input id="id13" title="住建局" onclick="countSel_url('id13')" type="checkbox"  value="13" name="tbidlist"><label for="id13" style="cursor:pointer">住建局</label></li>
+                                                   	<li><input id="id26" title="交通运输局" onclick="countSel_url('id26')" type="checkbox"  value="26" name="tbidlist"><label for="id26" style="cursor:pointer">交通运输局</label></li>
+                                                   	<li><input id="id24" title="水利局" onclick="countSel_url('id24')" type="checkbox"  value="24" name="tbidlist"><label for="id24" style="cursor:pointer">水利局</label></li>
+                                                   	<li><input id="id23" title="农业农村局" onclick="countSel_url('id23')" type="checkbox"  value="23" name="tbidlist"><label for="id23" style="cursor:pointer">农业农村局</label></li>
+                                                   	<li><input id="id36" title="商务局" onclick="countSel_url('id36')" type="checkbox"  value="36" name="tbidlist"><label for="id36" style="cursor:pointer">商务局</label></li>
+                                                   	<li><input id="id38" title="文化广电体育和旅游局" onclick="countSel_url('id38')" type="checkbox"  value="38" name="tbidlist"><label for="id38" style="cursor:pointer">文化广电体育和旅游局</label></li>
+                                                   	<li><input id="id31" title="卫生健康委" onclick="countSel_url('id31')" type="checkbox"  value="31" name="tbidlist"><label for="id31" style="cursor:pointer">卫生健康委</label></li>
+                                                   	<li><input id="id127" title="退役军人事务局" onclick="countSel_url('id127')" type="checkbox"  value="127" name="tbidlist"><label for="id127" style="cursor:pointer">退役军人事务局</label></li>
+                                                   	<li><input id="id21" title="应急管理局" onclick="countSel_url('id21')" type="checkbox"  value="21" name="tbidlist"><label for="id21" style="cursor:pointer">应急管理局</label></li>
+                                                   	<li><input id="id80" title="审计局" onclick="countSel_url('id80')" type="checkbox"  value="80" name="tbidlist"><label for="id80" style="cursor:pointer">审计局</label></li>
+                                                   	<li><input id="id28" title="市场监督管理局" onclick="countSel_url('id28')" type="checkbox"  value="28" name="tbidlist"><label for="id28" style="cursor:pointer">市场监督管理局</label></li>
+                                                   	<li><input id="id81" title="统计局" onclick="countSel_url('id81')" type="checkbox"  value="81" name="tbidlist"><label for="id81" style="cursor:pointer">统计局</label></li>
+                                                   	<li><input id="id25" title="林业局" onclick="countSel_url('id25')" type="checkbox"  value="25" name="tbidlist"><label for="id25" style="cursor:pointer">林业局</label></li>
+                                                   	<li><input id="id94" title="扶贫办" onclick="countSel_url('id94')" type="checkbox"  value="94" name="tbidlist"><label for="id94" style="cursor:pointer">扶贫办</label></li>
+                                                   	<li><input id="id128" title="医疗保障局" onclick="countSel_url('id128')" type="checkbox"  value="128" name="tbidlist"><label for="id128" style="cursor:pointer">医疗保障局</label></li>
+                                                   	<li><input id="id22" title="城市管理监督局" onclick="countSel_url('id22')" type="checkbox"  value="22" name="tbidlist"><label for="id22" style="cursor:pointer">城市管理监督局</label></li>
+                                                   	<li><input id="id122" title="行政审批局" onclick="countSel_url('id122')" type="checkbox"  value="122" name="tbidlist"><label for="id122" style="cursor:pointer">行政审批局</label></li>
+                                                   	<li><input id="id129" title="金融办" onclick="countSel_url('id129')" type="checkbox"  value="129" name="tbidlist"><label for="id129" style="cursor:pointer">金融办</label></li>
+                                                   	<li><input id="id84" title="国资委" onclick="countSel_url('id84')" type="checkbox"  value="84" name="tbidlist"><label for="id84" style="cursor:pointer">国资委</label></li>
+                                                   	<li><input id="id86" title="投资促进局" onclick="countSel_url('id86')" type="checkbox"  value="86" name="tbidlist"><label for="id86" style="cursor:pointer">投资促进局</label></li>
+                                                   	<li><input id="id130" title="梧州广播电视台" onclick="countSel_url('id130')" type="checkbox"  value="130" name="tbidlist"><label for="id130" style="cursor:pointer">梧州广播电视台</label></li>
+                                                   	<li><input id="id95" title="公积金管理中心" onclick="countSel_url('id95')" type="checkbox"  value="95" name="tbidlist"><label for="id95" style="cursor:pointer">公积金管理中心</label></li>
+                                                   	<li><input id="id114" title="食品药品检验所" onclick="countSel_url('id114')" type="checkbox"  value="114" name="tbidlist"><label for="id114" style="cursor:pointer">食品药品检验所</label></li>
+                                                   	<li><input id="id101" title="粤桂合作特别试验区" onclick="countSel_url('id101')" type="checkbox"  value="101" name="tbidlist"><label for="id101" style="cursor:pointer">粤桂合作特别试验区</label></li>
+                                                   	<li><input id="id96" title="梧州高新区" onclick="countSel_url('id96')" type="checkbox"  value="96" name="tbidlist"><label for="id96" style="cursor:pointer">梧州高新区</label></li>
+                                                   	<li><input id="id97" title="循环经济产业园区" onclick="countSel_url('id97')" type="checkbox"  value="97" name="tbidlist"><label for="id97" style="cursor:pointer">循环经济产业园区</label></li>
+                                                   	<li><input id="id107" title="苍海新区管委会" onclick="countSel_url('id107')" type="checkbox"  value="107" name="tbidlist"><label for="id107" style="cursor:pointer">苍海新区管委会</label></li>
+                                                   	<li><input id="id98" title="不锈钢产业园区" onclick="countSel_url('id98')" type="checkbox"  value="98" name="tbidlist"><label for="id98" style="cursor:pointer">不锈钢产业园区</label></li>
+                                                   	<li><input id="id15" title="商贸物流园区" onclick="countSel_url('id15')" type="checkbox"  value="15" name="tbidlist"><label for="id15" style="cursor:pointer">商贸物流园区</label></li>
+                                                   	<li><input id="id113" title="消防救援支队" onclick="countSel_url('id113')" type="checkbox"  value="113" name="tbidlist"><label for="id113" style="cursor:pointer">消防救援支队</label></li>
+                                                   	<li><input id="id64" title="总工会" onclick="countSel_url('id64')" type="checkbox"  value="64" name="tbidlist"><label for="id64" style="cursor:pointer">总工会</label></li>
+                                                   	<li><input id="id65" title="团市委" onclick="countSel_url('id65')" type="checkbox"  value="65" name="tbidlist"><label for="id65" style="cursor:pointer">团市委</label></li>
+                                                   	<li><input id="id66" title="妇联" onclick="countSel_url('id66')" type="checkbox"  value="66" name="tbidlist"><label for="id66" style="cursor:pointer">妇联</label></li>
+                                                   	<li><input id="id67" title="科协" onclick="countSel_url('id67')" type="checkbox"  value="67" name="tbidlist"><label for="id67" style="cursor:pointer">科协</label></li>
+                                                   	<li><input id="id68" title="文联" onclick="countSel_url('id68')" type="checkbox"  value="68" name="tbidlist"><label for="id68" style="cursor:pointer">文联</label></li>
+                                                   	<li><input id="id69" title="侨联" onclick="countSel_url('id69')" type="checkbox"  value="69" name="tbidlist"><label for="id69" style="cursor:pointer">侨联</label></li>
+                                                   	<li><input id="id70" title="残联" onclick="countSel_url('id70')" type="checkbox"  value="70" name="tbidlist"><label for="id70" style="cursor:pointer">残联</label></li>
+                                                   	<li><input id="id71" title="工商联" onclick="countSel_url('id71')" type="checkbox"  value="71" name="tbidlist"><label for="id71" style="cursor:pointer">工商联</label></li>
+                                                   	<li><input id="id126" title="社科联" onclick="countSel_url('id126')" type="checkbox"  value="126" name="tbidlist"><label for="id126" style="cursor:pointer">社科联</label></li>
+                                                   	<li><input id="id72" title="红十字会" onclick="countSel_url('id72')" type="checkbox"  value="72" name="tbidlist"><label for="id72" style="cursor:pointer">红十字会</label></li>
+                                                   	<li><input id="id115" title="梧州学院" onclick="countSel_url('id115')" type="checkbox"  value="115" name="tbidlist"><label for="id115" style="cursor:pointer">梧州学院</label></li>
+                                                   	<li><input id="id116" title="梧州职业学院" onclick="countSel_url('id116')" type="checkbox"  value="116" name="tbidlist"><label for="id116" style="cursor:pointer">梧州职业学院</label></li>
+                                                   	<li><input id="id99" title="梧州海关" onclick="countSel_url('id99')" type="checkbox"  value="99" name="tbidlist"><label for="id99" style="cursor:pointer">梧州海关</label></li>
+                                                   	<li><input id="id42" title="税务局" onclick="countSel_url('id42')" type="checkbox"  value="42" name="tbidlist"><label for="id42" style="cursor:pointer">税务局</label></li>
+                                                   	<li><input id="id35" title="海事局" onclick="countSel_url('id35')" type="checkbox"  value="35" name="tbidlist"><label for="id35" style="cursor:pointer">海事局</label></li>
+                                                   	<li><input id="id102" title="气象局" onclick="countSel_url('id102')" type="checkbox"  value="102" name="tbidlist"><label for="id102" style="cursor:pointer">气象局</label></li>
+                                                   	<li><input id="id103" title="水文局" onclick="countSel_url('id103')" type="checkbox"  value="103" name="tbidlist"><label for="id103" style="cursor:pointer">水文局</label></li>
+                                                   	<li><input id="id104" title="桂东公路局" onclick="countSel_url('id104')" type="checkbox"  value="104" name="tbidlist"><label for="id104" style="cursor:pointer">桂东公路局</label></li>
+                                                   	<li><input id="id112" title="供电局" onclick="countSel_url('id112')" type="checkbox"  value="112" name="tbidlist"><label for="id112" style="cursor:pointer">供电局</label></li>
+                                                   	<li><input id="id105" title="烟草局" onclick="countSel_url('id105')" type="checkbox"  value="105" name="tbidlist"><label for="id105" style="cursor:pointer">烟草局</label></li>
+                                                   	<li><input id="id108" title="邮政管理局" onclick="countSel_url('id108')" type="checkbox"  value="108" name="tbidlist"><label for="id108" style="cursor:pointer">邮政管理局</label></li>
+                                                   	<li><input id="id109" title="航道管理局" onclick="countSel_url('id109')" type="checkbox"  value="109" name="tbidlist"><label for="id109" style="cursor:pointer">航道管理局</label></li>
+                                                   	<li><input id="id110" title="人民银行梧州支行" onclick="countSel_url('id110')" type="checkbox"  value="110" name="tbidlist"><label for="id110" style="cursor:pointer">人民银行梧州支行</label></li>
+                                                   	<li><input id="id111" title="银保监分局" onclick="countSel_url('id111')" type="checkbox"  value="111" name="tbidlist"><label for="id111" style="cursor:pointer">银保监分局</label></li>
+                                                   	<li><input id="id118" title="梧州机场公司" onclick="countSel_url('id118')" type="checkbox"  value="118" name="tbidlist"><label for="id118" style="cursor:pointer">梧州机场公司</label></li>
+                                                   	<li><input id="id44" title="其他部门" onclick="countSel_url('id44')" type="checkbox"  value="44" name="tbidlist"><label for="id44" style="cursor:pointer">其他部门</label></li>
+                                                   	<li><input id="id53" title="问政走基层" onclick="countSel_url('id53')" type="checkbox"  value="53" name="tbidlist"><label for="id53" style="cursor:pointer">问政走基层</label></li>
+                                                   	<li><input id="id119" title="乡村建设曝光台" onclick="countSel_url('id119')" type="checkbox"  value="119" name="tbidlist"><label for="id119" style="cursor:pointer">乡村建设曝光台</label></li>
+                                                   	<li><input id="id120" title=" 问计于民专题" onclick="countSel_url('id120')" type="checkbox"  value="120" name="tbidlist"><label for="id120" style="cursor:pointer"> 问计于民专题</label></li>
+                                                   	<li><input id="id121" title="律师在线" onclick="countSel_url('id121')" type="checkbox"  value="121" name="tbidlist"><label for="id121" style="cursor:pointer">律师在线</label></li>
+                                                  </ul>
+					</div>
+                    <div class="blank10"></div>
+                    					<div class="left">县市区：</div>
+                   
+					<div class="right">
+						<ul>
+                                                  	<li><input id="id5" title="苍梧县" onclick="countSel_url('id5')" type="checkbox"  value="5" name="tbidlist"><label for="id5" style="cursor:pointer">苍梧县</label></li>
+                                                   	<li><input id="id4" title="岑溪市" onclick="countSel_url('id4')" type="checkbox"  value="4" name="tbidlist"><label for="id4" style="cursor:pointer">岑溪市</label></li>
+                                                   	<li><input id="id6" title="藤县" onclick="countSel_url('id6')" type="checkbox"  value="6" name="tbidlist"><label for="id6" style="cursor:pointer">藤县</label></li>
+                                                   	<li><input id="id7" title="蒙山县" onclick="countSel_url('id7')" type="checkbox"  value="7" name="tbidlist"><label for="id7" style="cursor:pointer">蒙山县</label></li>
+                                                   	<li><input id="id9" title="万秀区" onclick="countSel_url('id9')" type="checkbox"  value="9" name="tbidlist"><label for="id9" style="cursor:pointer">万秀区</label></li>
+                                                   	<li><input id="id11" title="长洲区" onclick="countSel_url('id11')" type="checkbox"  value="11" name="tbidlist"><label for="id11" style="cursor:pointer">长洲区</label></li>
+                                                   	<li><input id="id52" title="龙圩区" onclick="countSel_url('id52')" type="checkbox"  value="52" name="tbidlist"><label for="id52" style="cursor:pointer">龙圩区</label></li>
+                                                  </ul>
+					</div>
+                    <div class="blank10"></div>
+                                    </div>
+          		<!--内容 End-->
+		</div>
+	</div>
+</div>
+
+<!-- 弹出窗口结束 -->
+<div class="blank15"></div>
+<div class="footer">
+	主办：中共梧州市委宣传部　　承办：梧州日报社　  管理维护：梧州零距离网站 <br />  
+</div>
+
+
+<div style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe19e879f80c410d0fa7759edcb0ea3f7' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+
+</body>
+</html><!-- filter: fixurl enabled -->
